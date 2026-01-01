@@ -1,18 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>タクシー案内</title>
+
+<style>
+.photo-list{
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+  margin-top:10px;
+}
+
+.photo-list figure{
+  margin:0;
+}
+
+.photo-list img{
+  width:25%;
+  max-width:260px;
+  min-width:160px;
+  border-radius:12px;
+  border:1px solid #eee;
+  display:block;
+}
+
+.photo-list figcaption{
+  font-size:12px;
+  color:#666;
+  margin-top:6px;
+}
+</style>
+
+</head>
+<body>
+
 <div class="card">
   <span class="tag">写真（おすすめ）</span>
 
-  <div style="display:grid;gap:10px;margin-top:10px;">
-    <figure style="margin:0;">
-      <img src="fukuoka/images/entrance.jpg"
-     style="width:220px; height:auto; display:block; border-radius:12px; border:1px solid #eee;" />
-      <figcaption style="font-size:12px;color:#666;margin-top:6px;">車寄せ入口（北西側）</figcaption>
+  <div class="photo-list">
+    <figure>
+      <img src="fukuoka/images/entrance.jpg" alt="車寄せ入口（北西側）">
+      <figcaption>車寄せ入口（北西側）</figcaption>
     </figure>
 
-    <figure style="margin:0;">
-      <img src="fukuoka/images/wide.jpg"
-     style="width:220px; height:auto; display:block; border-radius:12px; border:1px solid #eee;" />
-      <figcaption style="font-size:12px;color:#666;margin-top:6px;">入口が分かる引きの写真</figcaption>
+    <figure>
+      <img src="fukuoka/images/wide.jpg" alt="入口が分かる引きの写真">
+      <figcaption>入口が分かる引きの写真</figcaption>
     </figure>
-
   </div>
 </div>
+
+</body>
+</html>

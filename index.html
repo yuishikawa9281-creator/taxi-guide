@@ -29,19 +29,6 @@ h1{
   font-weight:700;
 }
 
-/* Googleマップリンク（下用） */
-.map-link{
-  display:inline-block;
-  margin-top:10px;
-  font-size:2.5em;
-  font-weight:700;
-  color:#1a73e8;
-  text-decoration:none;
-}
-.map-link:hover{
-  text-decoration:underline;
-}
-
 /* 注意ボックス */
 .notice{
   margin:22px 0 24px;
@@ -79,16 +66,29 @@ figcaption{
   font-weight:700;
 }
 
-/* 2枚目写真のあとに余白（2行分） */
-.space-after-photo{
-  margin-top:40px;
+/* ★ここが重要：2行分の空白 */
+.space-2lines{
+  height:3.2em; /* ← テキスト2行分を確保 */
 }
 
-/* 下の強調文 */
+/* 強調テキスト */
 .focus-text{
   font-size:2em;
   font-weight:800;
   margin-bottom:10px;
+}
+
+/* Googleマップリンク */
+.map-link{
+  display:inline-block;
+  margin-top:10px;
+  font-size:2.5em;
+  font-weight:700;
+  color:#1a73e8;
+  text-decoration:none;
+}
+.map-link:hover{
+  text-decoration:underline;
 }
 </style>
 </head>
@@ -113,13 +113,16 @@ figcaption{
   <!-- 写真1 -->
   <figure>
     <img src="fukuoka/images/entrance.jpg" alt="車寄せ入口（北西側）">
-    <figcaption>車寄せ入口（北西側）</figcaption>
+    <figcaption>車寄せ入口（リハビリ専門学校側）</figcaption>
   </figure>
 
   <!-- 写真2 -->
-  <figure class="space-after-photo">
+  <figure>
     <img src="fukuoka/images/wide.jpg" alt="入口位置の目安">
   </figure>
+
+  <!-- ★2行分の空白 -->
+  <div class="space-2lines"></div>
 
   <!-- 強調テキスト -->
   <div class="focus-text">▼ この辺りに入り口があります ▼</div>

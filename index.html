@@ -1,148 +1,154 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<title>車寄せ入口案内</title>
+  <meta charset="UTF-8">
+  <title>車寄せ入口案内｜グランドメゾン福岡 The Central Luxe</title>
 
-<style>
-body{
-  margin:0;
-  background:#f5f6f7;
-  font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","Hiragino Kaku Gothic ProN","Noto Sans JP",Arial,sans-serif;
-}
+  <style>
+    body{
+      background:#f5f5f5;
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    }
 
-.wrapper{
-  max-width:760px;
-  margin:40px auto;
-  padding:0 16px;
-}
+    .container{
+      max-width:760px;          /* 白い枠の幅は元に戻しています */
+      margin:40px auto;
+      background:#fff;
+      border-radius:16px;
+      padding:32px 28px 36px;
+      box-shadow:0 10px 25px rgba(0,0,0,.08);
+      text-align:center;        /* 全体中央揃え */
+    }
 
-.card{
-  background:#fff;
-  border-radius:16px;
-  padding:32px 28px 36px;
-  box-shadow:0 8px 24px rgba(0,0,0,0.08);
-  text-align:center;
-}
+    h1{
+      font-size:22px;
+      margin-bottom:8px;
+    }
 
-h1{
-  font-size:22px;
-  margin:0 0 6px;
-  font-weight:700;
-}
+    .map-top{
+      font-size:22px;           /* 今までの約2.5倍 */
+      font-weight:600;
+      margin-bottom:18px;
+    }
 
-.map-link{
-  display:inline-block;
-  margin-bottom:18px;
-  font-size:15px;
-  color:#2563eb;
-  text-decoration:none;
-}
+    .map-top a{
+      color:#1a73e8;
+      text-decoration:none;
+    }
 
-.map-link:hover{
-  text-decoration:underline;
-}
+    .map-top a:hover{
+      text-decoration:underline;
+    }
 
-.notice{
-  background:#f0f6ff;
-  border-left:4px solid #2563eb;
-  padding:12px 16px;
-  margin:20px 0;
-  font-size:15px;
-  text-align:left;
-}
+    .notice{
+      background:#f1f7ff;
+      border-left:5px solid #2b6de9;
+      padding:14px 16px;
+      margin:20px 0 22px;
+      border-radius:8px;
+      font-size:16px;
+      text-align:left;
+    }
 
-.notice strong{
-  color:#2563eb;
-}
+    .notice strong{
+      color:#1a73e8;
+    }
 
-.desc{
-  text-align:left;
-  font-size:15px;
-  line-height:1.8;
-  margin-bottom:26px;
-}
+    p{
+      font-size:15px;
+      line-height:1.7;
+      margin:0 0 18px;
+      text-align:left;
+    }
 
-/* 写真エリア */
-.photo-list{
-  display:flex;
-  flex-direction:column;
-  gap:28px;
-  align-items:center;
-}
+    figure{
+      margin:26px 0;
+    }
 
-.photo-list figure{
-  margin:0;
-}
+    figure img{
+      width:100%;
+      border-radius:14px;
+      display:block;
+    }
 
-.photo-list img{
-  width:100%;
-  max-width:520px;
-  border-radius:14px;
-  border:1px solid #eee;
-  display:block;
-}
+    .caption-main{
+      margin-top:10px;
+      font-size:28px;   /* 文字サイズ2倍 */
+      font-weight:700;
+    }
 
-/* ★ ここが重要：2倍サイズ指定 */
-.caption-large{
-  font-size:26px;
-  margin-top:10px;
-}
+    .caption-sub{
+      margin-top:12px;
+      font-size:26px;   /* 文字サイズ2倍 */
+      font-weight:600;
+    }
 
-.caption-sub{
-  font-size:26px;
-  margin-top:6px;
-}
+    .map-link{
+      display:block;
+      margin-top:10px;
+      font-size:26px;   /* 今までの約2.5倍 */
+      font-weight:600;
+      color:#1a73e8;
+      text-decoration:none;
+    }
 
-.note-large{
-  font-size:26px;
-  margin-top:24px;
-}
-</style>
+    .map-link:hover{
+      text-decoration:underline;
+    }
 
+    .note{
+      font-size:14px;
+      color:#666;
+      margin-top:12px;
+    }
+  </style>
 </head>
-<body>
 
-<div class="wrapper">
-  <div class="card">
+<body>
+  <div class="container">
 
     <h1>【グランドメゾン福岡 The Central Luxe　車寄せ入口】</h1>
 
-    <a class="map-link"
-      href="https://www.google.com/maps/place/33%C2%B035'00.7%22N+130%C2%B024'07.7%22E/@33.5834536,130.4021623,21z/data=!4m4!3m3!8m2!3d33.583528!4d130.4021251!5m1!1e4!18m1!1e1?entry=ttu"
-      target="_blank" rel="noopener">
-      Googleマップで場所を確認する
-    </a>
+    <div class="map-top">
+      <a href="https://www.google.com/maps/place/33%C2%B035'00.7%22N+130%C2%B024'07.7%22E/"
+         target="_blank" rel="noopener">
+        Googleマップで場所を確認する
+      </a>
+    </div>
 
     <div class="notice">
       ✅ <strong>重要</strong>：正面玄関前ではなく  
       「<strong>車寄せ入口（北西側）</strong>」へお越しください
     </div>
 
-    <div class="desc">
+    <p>
       車寄せの入口は建物の北西側にあります。<br>
-      建物周辺に着いたら、正面で停めずに北西側の車路（車寄せ入口）へ回り込み、<br>
+      建物周辺に着いたら、正面で停めずに北西側の車路（車寄せ入口）へ回り込み、  
       屋根のある車寄せスペースに進入してください。
-    </div>
+    </p>
 
-    <div class="photo-list">
+    <figure>
+      <img src="fukuoka/images/approach.jpg" alt="車寄せ入口（北西側）">
+      <div class="caption-main">車寄せ入口（北西側）</div>
+    </figure>
 
-      <figure>
-        <img src="fukuoka/images/entrance.jpg" alt="車寄せ入口（北西側）">
-        <figcaption class="caption-large">車寄せ入口（北西側）</figcaption>
-      </figure>
+    <figure>
+      <img src="fukuoka/images/wide.jpg" alt="入口付近の全体写真">
+      <div class="caption-sub">▼ この辺りに入り口があります ▼</div>
 
-      <figure>
-        <img src="fukuoka/images/wide.jpg" alt="入口が分かる引きの写真">
-        <div class="caption-sub">この辺りに入り口があります</div>
-      </figure>
+      <a
+        href="https://www.google.com/maps/place/33%C2%B035'00.7%22N+130%C2%B024'07.7%22E/"
+        target="_blank"
+        rel="noopener"
+        class="map-link"
+      >
+        Googleマップで場所を確認する
+      </a>
+    </figure>
 
-    </div>
-
-    <div class="note-large">※出口は北東側です。</div>
+    <div class="note">※出口は北東側です。</div>
 
   </div>
-</div>
-
 </body>
 </html>

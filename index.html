@@ -1,162 +1,115 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>車寄せ入口案内｜グランドメゾン福岡 The Central Luxe</title>
+<meta charset="UTF-8">
+<title>車寄せ入口案内｜グランドメゾン福岡 The Central Luxe</title>
 
-  <style>
-    :root{
-      --bg:#ffffff;
-      --text:#111;
-      --muted:#666;
-      --line:#e7e7e7;
-      --card:#ffffff;
-      --accent:#16a34a;
-    }
+<style>
+body{
+  margin:0;
+  font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+  background:#f6f6f6;
+  color:#222;
+}
 
-    *{ box-sizing:border-box; }
-    body{
-      margin:0;
-      background:var(--bg);
-      color:var(--text);
-      font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,
-        "Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",Meiryo,sans-serif;
-      line-height:1.7;
-    }
+.wrapper{
+  max-width:720px;
+  margin:40px auto;
+  padding:0 20px;
+}
 
-    /* 中央寄せの本文カラム */
-    .page{
-      max-width:860px;
-      margin:0 auto;
-      padding:28px 18px 64px;
-    }
+.card{
+  background:#fff;
+  border-radius:14px;
+  padding:28px;
+  box-shadow:0 6px 18px rgba(0,0,0,.06);
+}
 
-    h1{
-      font-size:26px;
-      margin:0 0 12px;
-      font-weight:800;
-      letter-spacing:.2px;
-    }
+h1{
+  font-size:22px;
+  margin:0 0 14px;
+}
 
-    .sub{
-      color:var(--muted);
-      margin:0 0 18px;
-      font-size:14px;
-    }
+.notice{
+  background:#f1f7ff;
+  border-left:4px solid #2563eb;
+  padding:14px 16px;
+  margin:18px 0;
+  line-height:1.7;
+}
 
-    .card{
-      border:1px solid var(--line);
-      border-radius:14px;
-      padding:18px 18px;
-      background:var(--card);
-    }
+.notice strong{
+  color:#1d4ed8;
+}
 
-    /* 重要ボックス */
-    .important{
-      display:flex;
-      gap:10px;
-      align-items:flex-start;
-      padding:14px 14px;
-      border:1px solid rgba(22,163,74,.25);
-      background:rgba(22,163,74,.06);
-      border-radius:12px;
-      margin:14px 0 14px;
-    }
-    .important .badge{
-      flex:0 0 auto;
-      width:18px;
-      height:18px;
-      border-radius:4px;
-      background:var(--accent);
-      display:inline-block;
-      margin-top:3px;
-      position:relative;
-    }
-    .important .badge::after{
-      content:"✓";
-      position:absolute;
-      inset:0;
-      display:grid;
-      place-items:center;
-      color:#fff;
-      font-size:13px;
-      font-weight:800;
-    }
-    .important b{
-      font-weight:800;
-    }
+p{
+  line-height:1.8;
+  margin:14px 0;
+}
 
-    /* 写真セクション（中央寄せ＋適度なサイズ） */
-    .photos{
-      margin-top:18px;
-      display:flex;
-      flex-direction:column;
-      gap:18px;
-    }
+.photo-list{
+  margin-top:22px;
+  display:flex;
+  flex-direction:column;
+  gap:22px;
+  align-items:center;
+}
 
-    figure{
-      margin:0;
-      text-align:center;
-    }
+.photo-list figure{
+  margin:0;
+  text-align:center;
+}
 
-    /* ここで写真の“見た目サイズ”を決める */
-    .photo{
-      width:100%;
-      max-width:720px;   /* ←大きさはここで調整（例: 640〜780） */
-      margin:0 auto;
-      border-radius:14px;
-      border:1px solid var(--line);
-      display:block;
-    }
+.photo-list img{
+  width:55%;
+  max-width:420px;
+  min-width:260px;
+  border-radius:14px;
+  border:1px solid #e5e5e5;
+}
 
-    figcaption{
-      max-width:720px;
-      margin:8px auto 0;
-      text-align:left;
-      color:var(--muted);
-      font-size:13px;
-    }
-
-    .note{
-      margin-top:14px;
-      color:var(--muted);
-      font-size:14px;
-    }
-  </style>
+.photo-list figcaption{
+  font-size:13px;
+  color:#555;
+  margin-top:8px;
+}
+</style>
 </head>
 
 <body>
-  <main class="page">
-    <h1>【グランドメゾン福岡 The Central Luxe　車寄せ入口】</h1>
+<div class="wrapper">
+  <div class="card">
 
-    <div class="card">
-      <div class="important">
-        <span class="badge" aria-hidden="true"></span>
-        <div>
-          <b>重要：正面玄関前ではなく「車寄せ入口（北西側）」へ</b>
-        </div>
-      </div>
+    <h1>グランドメゾン福岡 The Central Luxe　車寄せ入口</h1>
 
-      <p>
-        車寄せの入口は建物の北西側にあります。<br>
-        建物周辺に着いたら、正面で停めずに北西側の車路（車寄せ入口）へ回り込み、屋根のある車寄せスペースに進入してください。
-      </p>
-
-      <div class="photos">
-        <figure>
-          <img class="photo" src="fukuoka/images/entrance.jpg" alt="車寄せ入口（北西側）">
-          <figcaption>写真1：車寄せ入口（北西側）</figcaption>
-        </figure>
-
-        <figure>
-          <img class="photo" src="fukuoka/images/wide.jpg" alt="入口が分かる引きの写真">
-          <figcaption>写真2：入口が分かる引きの写真</figcaption>
-        </figure>
-      </div>
-
-      <p class="note">※出口は北東側です。</p>
+    <div class="notice">
+      ✅ <strong>重要：</strong>正面玄関前ではなく<br>
+      <strong>「車寄せ入口（北西側）」</strong>へお越しください
     </div>
-  </main>
+
+    <p>
+      車寄せの入口は建物の<strong>北西側</strong>にあります。<br>
+      建物周辺に着いたら、正面で停めずに北西側の車路（車寄せ入口）へ回り込み、<br>
+      屋根のある車寄せスペースに進入してください。
+    </p>
+
+    <div class="photo-list">
+      <figure>
+        <img src="fukuoka/images/entrance.jpg" alt="車寄せ入口（北西側）">
+        <figcaption>車寄せ入口（北西側）</figcaption>
+      </figure>
+
+      <figure>
+        <img src="fukuoka/images/wide.jpg" alt="入口が分かる引きの写真">
+        <figcaption>入口が分かる引きの写真</figcaption>
+      </figure>
+    </div>
+
+    <p style="margin-top:26px;font-size:13px;color:#555;">
+      ※出口は北東側です。
+    </p>
+
+  </div>
+</div>
 </body>
 </html>

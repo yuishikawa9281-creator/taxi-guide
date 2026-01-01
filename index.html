@@ -2,7 +2,6 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>車寄せ入口案内</title>
 
 <style>
@@ -13,7 +12,6 @@ body{
   padding:40px 0;
 }
 
-/* 白いカード */
 .card{
   background:#fff;
   max-width:760px;
@@ -24,11 +22,11 @@ body{
   text-align:center;
 }
 
-/* ★タイトル：今の2倍サイズ */
+/* タイトル */
 h1{
-  font-size:44px;          /* ← 2倍 */
-  margin:0 0 18px;
-  font-weight:800;
+  font-size:22px;
+  margin:0 0 10px;
+  font-weight:700;
 }
 
 /* 注意ボックス */
@@ -68,18 +66,19 @@ figcaption{
   font-weight:700;
 }
 
-/* ★2行分の空白（視覚的に確実） */
+/* ★ここが重要：2行分の空白 */
 .space-2lines{
-  height:3.2em;
+  height:3.2em; /* ← テキスト2行分を確保 */
 }
 
 /* 強調テキスト */
 .focus-text{
   font-size:2em;
   font-weight:800;
+  margin-bottom:10px;
 }
 
-/* Googleマップリンク（大きめ） */
+/* Googleマップリンク */
 .map-link{
   display:inline-block;
   margin-top:10px;
@@ -91,13 +90,6 @@ figcaption{
 .map-link:hover{
   text-decoration:underline;
 }
-
-/* スマホ調整 */
-@media (max-width: 640px){
-  h1{ font-size:32px; }        /* スマホでは少し抑える */
-  .focus-text{ font-size:1.6em; }
-  .map-link{ font-size:1.8em; }
-}
 </style>
 </head>
 
@@ -108,24 +100,23 @@ figcaption{
   <h1>【グランドメゾン福岡 The Central Luxe　車寄せ入口】</h1>
 
   <div class="notice">
-    ✅ <strong>重要：</strong>
-    正面玄関前ではなく
-    「<strong>車寄せ入口（北西側）</strong>」へお越しください
+    ✅ <strong>重要：</strong>正面玄関前ではなく  
+    「<strong>車寄せ入口（リハビリ専門学校側）</strong>」へお越しください
   </div>
 
   <div class="desc">
-    車寄せの入口は建物の北西側にあります。<br>
-    建物周辺に着いたら、正面で停めずに北西側の車路（車寄せ入口）へ回り込み、
+    車寄せの入口は建物の北西側、リハビリ専門学校側にあります。<br>
+    建物周辺に着いたら、正面で停めずにリハビリ専門学校側の車路（車寄せ入口）へ回り込み、  
     屋根のある車寄せスペースに進入してください。
   </div>
 
-  <!-- 写真① -->
+  <!-- 写真1 -->
   <figure>
     <img src="fukuoka/images/entrance.jpg" alt="車寄せ入口（北西側）">
-    <figcaption>車寄せ入口（北西側）</figcaption>
+    <figcaption>車寄せ入口（リハビリ専門学校側）</figcaption>
   </figure>
 
-  <!-- 写真② -->
+  <!-- 写真2 -->
   <figure>
     <img src="fukuoka/images/wide.jpg" alt="入口位置の目安">
   </figure>
@@ -133,15 +124,14 @@ figcaption{
   <!-- ★2行分の空白 -->
   <div class="space-2lines"></div>
 
-  <!-- 強調文 -->
+  <!-- 強調テキスト -->
   <div class="focus-text">▼ この辺りに入り口があります ▼</div>
 
-  <!-- Googleマップ -->
+  <!-- Googleマップリンク -->
   <a
     class="map-link"
     href="https://www.google.com/maps/place/33%C2%B035'00.7%22N+130%C2%B024'07.7%22E/@33.5834536,130.4021623,21z"
     target="_blank"
-    rel="noopener"
   >
     Googleマップで場所を確認する
   </a>

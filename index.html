@@ -1,134 +1,179 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>車寄せ入口案内｜グランドメゾン福岡 The Central Luxe</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>タクシー案内</title>
 
   <style>
     body{
-      background:#f5f5f5;
       margin:0;
-      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+      background:#f4f5f7;
+      font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;
+      color:#222;
     }
 
-    .container{
-      max-width:760px;
-      margin:40px auto;
+    /* 全体中央寄せ */
+    .page{
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      padding:48px 16px;
+    }
+
+    /* 白い枠（幅は広めに戻す） */
+    .card{
+      width:min(900px, 92vw);
       background:#fff;
-      border-radius:16px;
-      padding:32px 28px 36px;
-      box-shadow:0 10px 25px rgba(0,0,0,.08);
+      border-radius:18px;
+      box-shadow:0 10px 30px rgba(0,0,0,.08);
+      padding:34px 40px 36px;
+    }
+
+    /* タイトル中央 */
+    .title{
+      margin:0;
       text-align:center;
+      font-size:28px;
+      font-weight:800;
+      letter-spacing:.2px;
     }
 
-    h1{
-      font-size:22px;
-      margin-bottom:18px;
-    }
-
-    .notice{
-      background:#f1f7ff;
-      border-left:5px solid #2b6de9;
+    /* 注意ボックス（1行にまとめる） */
+    .callout{
+      margin:18px auto 18px;
+      background:#eef6ff;
+      border-radius:10px;
       padding:14px 16px;
-      margin:20px 0 22px;
-      border-radius:8px;
+      border-left:4px solid #2b6de8;
       font-size:16px;
-      text-align:left;
+      line-height:1.6;
+      white-space:nowrap;          /* 1行固定 */
+      overflow:hidden;
+      text-overflow:ellipsis;      /* 画面が狭い場合だけ… */
+      text-align:center;           /* 中央寄せ */
+    }
+    .callout b{ color:#1f57c7; }
+
+    /* 説明文 */
+    .desc{
+      margin:14px auto 0;
+      font-size:16px;
+      line-height:1.9;
+      max-width:720px;
     }
 
-    .notice strong{
-      color:#1a73e8;
-    }
-
-    p{
-      font-size:15px;
-      line-height:1.7;
-      margin:0 0 18px;
-      text-align:left;
+    /* 写真ブロック */
+    .photo-list{
+      margin-top:24px;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      gap:28px;
     }
 
     figure{
-      margin:26px 0;
+      margin:0;
+      width:100%;
+      max-width:720px;
+      text-align:center;
     }
 
     figure img{
       width:100%;
-      border-radius:14px;
+      max-width:720px;
+      border-radius:18px;
+      border:1px solid #eee;
       display:block;
+      margin:0 auto;
     }
 
+    /* 文字サイズ：今の2倍くらいの“大きめ” */
     .caption-main{
-      margin-top:10px;
-      font-size:28px;
-      font-weight:700;
-    }
-
-    .caption-sub{
       margin-top:12px;
-      font-size:26px;
-      font-weight:600;
+      font-size:28px;
+      font-weight:800;
     }
 
+    /* 「▼この辺りに入り口があります▼」 */
+    .caption-sub{
+      margin-top:14px;
+      font-size:28px;
+      font-weight:800;
+    }
+
+    /* Googleマップリンク：下に置く＆約2.5倍くらい大きく */
     .map-link{
-      display:block;
-      margin-top:10px;
+      display:inline-block;
+      margin-top:14px;
       font-size:26px;
-      font-weight:600;
+      font-weight:800;
       color:#1a73e8;
       text-decoration:none;
     }
+    .map-link:hover{ text-decoration:underline; }
 
-    .map-link:hover{
-      text-decoration:underline;
+    /* 最下部の注意（2倍くらい） */
+    .note{
+      margin-top:26px;
+      text-align:center;
+      font-size:20px;
+      font-weight:700;
+      color:#444;
     }
 
-    .note{
-      font-size:14px;
-      color:#666;
-      margin-top:12px;
+    @media (max-width: 640px){
+      .card{ padding:26px 18px 28px; }
+      .title{ font-size:22px; }
+      .callout{ white-space:normal; } /* スマホだけ折り返しOK */
+      figure img{ border-radius:14px; }
+      .caption-main, .caption-sub{ font-size:22px; }
+      .map-link{ font-size:22px; }
+      .note{ font-size:18px; }
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
+  <div class="page">
+    <div class="card">
 
-    <h1>【グランドメゾン福岡 The Central Luxe　車寄せ入口】</h1>
+      <h1 class="title">【グランドメゾン福岡 The Central Luxe　車寄せ入口】</h1>
 
-    <div class="notice">
-      ✅ <strong>重要</strong>：正面玄関前ではなく  
-      「<strong>車寄せ入口（北西側）</strong>」へお越しください
+      <div class="callout">
+        ✅ <b>重要：</b>正面玄関前ではなく「<b>車寄せ入口（北西側）</b>」へお越しください
+      </div>
+
+      <div class="desc">
+        車寄せの入口は建物の<b>北西側</b>にあります。<br>
+        建物周辺に着いたら、正面で停めずに北西側の車路（車寄せ入口）へ回り込み、屋根のある車寄せスペースに進入してください。
+      </div>
+
+      <div class="photo-list">
+
+        <!-- 写真① -->
+        <figure>
+          <img src="fukuoka/images/entrance.jpg" alt="車寄せ入口（北西側）">
+          <div class="caption-main">車寄せ入口（北西側）</div>
+        </figure>
+
+        <!-- 写真② -->
+        <figure>
+          <img src="fukuoka/images/wide.jpg" alt="入口付近の全体写真">
+          <div class="caption-sub">▼この辺りに入り口があります▼</div>
+
+          <a class="map-link"
+             href="https://www.google.com/maps/place/33%C2%B035'00.7%22N+130%C2%B024'07.7%22E/@33.5834536,130.4021623,21z/data=!4m4!3m3!8m2!3d33.583528!4d130.4021251!5m1!1e4!18m1!1e1?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
+             target="_blank" rel="noopener">
+            Googleマップで場所を確認する
+          </a>
+        </figure>
+
+      </div>
+
+      <div class="note">※出口は北東側です。</div>
+
     </div>
-
-    <p>
-      車寄せの入口は建物の北西側にあります。<br>
-      建物周辺に着いたら、正面で停めずに北西側の車路（車寄せ入口）へ回り込み、  
-      屋根のある車寄せスペースに進入してください。
-    </p>
-
-    <!-- 写真① 車寄せ入口 -->
-    <figure>
-      <img src="fukuoka/images/approach.jpg" alt="車寄せ入口（北西側）">
-      <div class="caption-main">車寄せ入口（北西側）</div>
-    </figure>
-
-    <!-- 写真② 引き -->
-    <figure>
-      <img src="fukuoka/images/wide.jpg" alt="入口付近の全体写真">
-      <div class="caption-sub">▼ この辺りに入り口があります ▼</div>
-
-      <a
-        href="https://www.google.com/maps/place/33%C2%B035'00.7%22N+130%C2%B024'07.7%22E/"
-        target="_blank"
-        rel="noopener"
-        class="map-link"
-      >
-        Googleマップで場所を確認する
-      </a>
-    </figure>
-
-    <div class="note">※出口は北東側です。</div>
-
   </div>
 </body>
 </html>

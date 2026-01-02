@@ -1,1 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>車寄せ入口案内｜グランフロント大阪オーナーズタワー</title>
+
+<style>
+body{
+  background:#f5f6f8;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  margin:0;
+  padding:40px 0;
+}
+
+.card{
+  background:#fff;
+  max-width:760px;
+  margin:0 auto;
+  padding:36px 32px 40px;
+  border-radius:16px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+  text-align:center;
+}
+
+/* タイトル（改行なし・はみ出し防止） */
+h1{
+  font-size: clamp(18px, 3.2vw, 26px);
+  margin: 0 0 16px;
+  font-weight: 700;
+  line-height: 1.2;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+  max-width: 100%;
+  padding: 0 12px;
+  box-sizing: border-box;
+}
+
+/* ポイント */
+.notice{
+  margin:22px 0 24px;
+  padding:16px 18px;
+  background:#f0f6ff;
+  border-left:4px solid #3b82f6;
+  border-radius:8px;
+  text-align:left;
+  font-size:15px;
+  line-height:1.7;
+}
+.notice strong{ color:#1e40af; }
+
+/* よくある間違い */
+.warning{
+  margin:20px 0 28px;
+  padding:16px 18px;
+  background:#fff7ed;
+  border-left:4px solid #f97316;
+  border-radius:8px;
+  text-align:left;
+  font-size:15px;
+  line-height:1.7;
+}
+
+/* 写真 */
+figure{ margin:0 0 26px; }
+figure img{
+  width:100%;
+  max-width:520px;
+  border-radius:14px;
+}
+figcaption{
+  margin-top:10px;
+  font-size:1.6em;
+  font-weight:700;
+}
+
+/* 空白（2行分） */
+.space-2lines{ height:3.2em; }
+
+/* 強調テキスト */
+.focus-text{
+  font-size:2em;
+  font-weight:800;
+  margin-bottom:10px;
+}
+
+/* Googleマップリンク */
+.map-link{
+  display:inline-block;
+  margin-top:10px;
+  font-size:2.5em;
+  font-weight:700;
+  color:#1a73e8;
+  text-decoration:none;
+}
+.map-link:hover{ text-decoration:underline; }
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+  <h1>【グランフロント大阪オーナーズタワー　車寄せ入口】</h1>
+
+  <div class="notice">
+    ✅ <strong>ポイント</strong><br>
+    ・ グランフロント大阪オーナーズタワー「北館」側です<br>
+    ・ ホテル（インターコンチネンタル）ではありません<br>
+    ・ 一般駐車場ではなく、オーナーズタワー専用の車寄せです<br>
+    ・ 建物のエントランス前までそのまま乗り入れ可能です
+  </div>
+
+  <div class="warning">
+    📌 <strong>よくある間違い（重要）</strong><br>
+    ・ グランフロント大阪 南館<br>
+    ・ インターコンチネンタルホテル<br>
+    ・ 地下駐車場入口<br>
+    ・ 商業施設側エントランス
+  </div>
+
+  <!-- 写真1：車寄せ入口（入り方） -->
+  <figure>
+    <img src="images/entrance.jpg" alt="車寄せ入口（入り方）">
+    <figcaption>車寄せ入口</figcaption>
+  </figure>
+
+  <!-- 写真2：車寄せスペース -->
+  <figure>
+    <img src="images/wide.jpg" alt="車寄せスペース">
+  </figure>
+
+  <div class="space-2lines"></div>
+
+  <div class="focus-text">▼ この辺りに入口があります ▼</div>
+
+  <a
+    class="map-link"
+    href="https://www.google.com/maps?q=34.7077298,135.4940518&entry=gps"
+    target="_blank"
+    rel="noopener"
+  >
+    Googleマップで場所を確認する
+  </a>
+
+</div>
+
+</body>
+</html>
 

@@ -2,127 +2,136 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>車寄せ入口案内｜東京ツインパークス ライトウィング</title>
-
 <style>
-body{
-  background:#f5f6f8;
-  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-  margin:0;
-  padding:40px 0;
-}
+  body{
+    background:#f5f6f8;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    margin:0;
+    padding:40px 0;
+  }
 
-.card{
-  background:#fff;
-  max-width:760px;
-  margin:0 auto;
-  padding:36px 32px 40px;
-  border-radius:16px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.08);
-  text-align:center;
-}
+  .card{
+    background:#fff;
+    max-width:760px;
+    margin:0 auto;
+    padding:36px 32px 40px;
+    border-radius:16px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    text-align:center;
+  }
 
-/* タイトル（改行なし） */
-h1{
-  font-size:clamp(18px,3.2vw,26px);
-  margin:0 0 20px;
-  font-weight:700;
-  white-space:nowrap;
-}
+  h1{
+    font-size: clamp(18px, 3.2vw, 26px);
+    margin: 0 0 18px;
+    font-weight: 700;
+    line-height: 1.2;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+    max-width: 100%;
+    padding: 0 12px;
+    box-sizing: border-box;
+  }
 
-/* ポイント（青） */
-.notice{
-  background:#eef4ff;
-  padding:16px;
-  border-radius:12px;
-  margin-bottom:20px;
-  text-align:left;
-}
+  .notice{
+    text-align:left;
+    background:#eef6ff;
+    border:1px solid #cfe6ff;
+    padding:16px 18px;
+    border-radius:12px;
+    margin: 18px 0 14px;
+    line-height:1.7;
+    font-size:15px;
+  }
 
-/* 注意（赤） */
-.warning{
-  background:#fff1f1;
-  padding:16px;
-  border-radius:12px;
-  margin-bottom:30px;
-  text-align:left;
-}
+  .warning{
+    text-align:left;
+    background:#fff3e8;
+    border:1px solid #ffd7b8;
+    padding:16px 18px;
+    border-radius:12px;
+    margin: 0 0 22px;
+    line-height:1.7;
+    font-size:15px;
+  }
 
-/* 写真 */
-figure{
-  margin:0 0 36px;
-}
-figure img{
-  width:100%;
-  border-radius:14px;
-}
+  figure{
+    margin: 0 0 18px;
+  }
 
-/* 写真間タイトル */
-.between-title{
-  font-size:clamp(22px,4vw,30px);
-  font-weight:800;
-  margin:28px 0 28px;
-}
+  img{
+    width:100%;
+    height:auto;
+    border-radius:16px;
+    display:block;
+  }
 
-/* 強調テキスト */
-.focus-text{
-  font-size:2em;
-  font-weight:800;
-  margin:48px 0 20px;
-}
+  .between-title{
+    font-size: clamp(22px, 4.8vw, 38px);
+    font-weight: 900;
+    margin: 18px 0 18px;
+    line-height: 1.2;
+  }
 
-/* マップリンク */
-.map-link{
-  display:inline-block;
-  font-size:1.8em;
-  font-weight:800;
-  color:#2f6fed;
-  text-decoration:none;
-}
+  .focus-text{
+    font-size: 2em;
+    font-weight: 800;
+    margin-top: 28px;   /* 写真と▼文言の距離 */
+    margin-bottom: 16px;
+  }
+
+  .map-link{
+    display:inline-block;
+    margin-top: 6px;
+    font-size: clamp(24px, 5.5vw, 44px);
+    font-weight: 900;
+    color:#2f6fec;
+    text-decoration:none;
+  }
+  .map-link:hover{ text-decoration:underline; }
 </style>
 </head>
 
 <body>
-<div class="card">
+  <div class="card">
+    <h1>【東京ツインパークス ライトウィング　車寄せ入口】</h1>
 
-<h1>【東京ツインパークス ライトウィング　車寄せ入口】</h1>
+    <div class="notice">
+      ✅ <strong>ポイント</strong><br>
+      ・東京ツインパークス ライトウィングの「481号線沿い」に入口があります<br>
+      ・地上ではなく、地下（B1）へ進入してください
+    </div>
 
-<div class="notice">
-✅ <strong>ポイント</strong><br>
-・東京ツインパークス ライトウィングの「481号線沿い」に入口があります<br>
-・地上ではなく、地下（B1）へ進入してください
-</div>
+    <div class="warning">
+      📌 <strong>よくある間違い（重要）</strong><br>
+      ・東京ツインパークス レフトウィング
+    </div>
 
-<div class="warning">
-📌 <strong>よくある間違い（重要）</strong><br>
-・東京ツインパークス レフトウィング
-</div>
+    <!-- 写真1 -->
+    <figure>
+      <img src="wide.jpg" alt="車寄せ入口">
+    </figure>
 
-<!-- 写真1：車寄せ入口 -->
-<figure>
-  <img src="images/wide.jpg" alt="車寄せ入口">
-</figure>
+    <!-- 2枚の間の文字 -->
+    <div class="between-title">車寄せ入口</div>
 
-<!-- 写真間タイトル -->
-<div class="between-title">車寄せ入口</div>
+    <!-- 写真2 -->
+    <figure>
+      <img src="entrance.jpg" alt="入口位置の目安">
+    </figure>
 
-<!-- 写真2：入口付近 -->
-<figure>
-  <img src="images/entrance.jpg" alt="車寄せ入口（詳細）">
-</figure>
+    <div class="focus-text">▼ この辺りに入口があります ▼</div>
 
-<div class="focus-text">▼ この辺りに入口があります ▼</div>
-
-<a
-  class="map-link"
-  href="https://www.google.com/maps?q=35.6608259,139.7591927&entry=gps"
-  target="_blank"
-  rel="noopener"
->
-Googleマップで場所を確認する
-</a>
-
-</div>
+    <a
+      class="map-link"
+      href="https://www.google.com/maps?q=35.6608259,139.7591927&entry=gps&lucs=,94297699,94275415,94284460,94231188,94280568,47071704,94218641,94282134,94286869&g_ep=CAISEjI1LjQ5LjkuODM4ODk5MTgzMBgAIIgnKlEsOTQyOTc2OTksOTQyNzU0MTUsOTQyODQ0NjAsOTQyMzExODgsOTQyODA1NjgsNDcwNzE3MDQsOTQyMTg2NDEsOTQyODIxMzQsOTQyODY4NjlCAkpQ&skid=83d3e137-c5c6-42f8-8903-195aaf9d6087&g_st=il"
+      target="_blank"
+      rel="noopener"
+    >
+      Googleマップで場所を確認する
+    </a>
+  </div>
 </body>
 </html>
-

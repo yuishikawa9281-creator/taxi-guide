@@ -39,6 +39,20 @@ h1{
   box-sizing: border-box;
 }
 
+.between-title{
+  margin: 24px 0 32px;
+  font-size: clamp(22px, 4vw, 30px);
+  font-weight: 700;
+  text-align: center;
+}
+
+figure{
+  margin-bottom: 48px;
+}
+
+.focus-text{
+  margin-top: 48px;
+}
 
 
 /* 注意ボックス */
@@ -122,22 +136,22 @@ figcaption{
     屋根のある車寄せスペースに進入してください。
   </div>
 
-  <!-- 写真1 -->
-  <figure>
-    <img src="fukuoka/images/entrance.jpg" alt="車寄せ入口（北西側）">
-    <figcaption>車寄せ入口（リハビリ専門学校側）</figcaption>
-  </figure>
+  <!-- 写真1：外観（入り方） -->
+<figure>
+  <img src="./images/wide.jpg" alt="車寄せの入り方">
+</figure>
 
-  <!-- 写真2 -->
-  <figure>
-    <img src="fukuoka/images/wide.jpg" alt="入口位置の目安">
-  </figure>
+<!-- 写真の間のタイトル -->
+<div class="between-title">車寄せ入口</div>
 
-  <!-- ★2行分の空白 -->
-  <div class="space-2lines"></div>
+<!-- 写真2：車寄せ（室内） -->
+<figure>
+  <img src="./images/entrance.jpg" alt="車寄せ入口">
+</figure>
 
-  <!-- 強調テキスト -->
-  <div class="focus-text">▼ この辺りに入り口があります ▼</div>
+<!-- 強調テキスト -->
+<div class="focus-text">▼ この辺りに入口があります ▼</div>
+
 
   <!-- Googleマップリンク -->
   <a

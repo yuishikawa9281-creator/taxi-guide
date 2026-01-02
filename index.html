@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>車寄せ入口案内</title>
+<title>車寄せ入口案内｜グランフロント大阪オーナーズタワー</title>
 
 <style>
 body{
@@ -22,45 +22,44 @@ body{
   text-align:center;
 }
 
-/* タイトル */
 /* タイトル（改行なし・はみ出し防止） */
 h1{
-  font-size: clamp(18px, 3.2vw, 26px); /* ← PCでデカくなりすぎない */
-  margin: 0 0 10px;
+  font-size: clamp(18px, 3.2vw, 26px);
+  margin: 0 0 16px;
   font-weight: 700;
   line-height: 1.2;
-  text-align: center;
-
-  white-space: nowrap;      /* 絶対に改行しない */
-  overflow: hidden;         /* 枠からはみ出さない */
-  text-overflow: clip;      /* …にもしない */
-  max-width: 100%;          /* これ重要 */
-  padding: 0 12px;          /* 枠ギリギリ回避 */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+  padding: 0 12px;
   box-sizing: border-box;
 }
 
-
-
-/* 注意ボックス */
+/* ポイント・注意ボックス */
 .notice{
   margin:22px 0 24px;
-  padding:14px 16px;
+  padding:16px 18px;
   background:#f0f6ff;
   border-left:4px solid #3b82f6;
   border-radius:8px;
   text-align:left;
   font-size:15px;
+  line-height:1.7;
 }
 .notice strong{
   color:#1e40af;
 }
 
-/* 説明文 */
-.desc{
+/* よくある間違い */
+.warning{
+  margin:20px 0 28px;
+  padding:16px 18px;
+  background:#fff7ed;
+  border-left:4px solid #f97316;
+  border-radius:8px;
   text-align:left;
   font-size:15px;
   line-height:1.7;
-  margin-bottom:28px;
 }
 
 /* 写真 */
@@ -74,13 +73,13 @@ figure img{
 }
 figcaption{
   margin-top:10px;
-  font-size:2em;
+  font-size:1.6em;
   font-weight:700;
 }
 
-/* ★ここが重要：2行分の空白 */
+/* 空白（2行分） */
 .space-2lines{
-  height:3.2em; /* ← テキスト2行分を確保 */
+  height:3.2em;
 }
 
 /* 強調テキスト */
@@ -109,40 +108,42 @@ figcaption{
 
 <div class="card">
 
-  <h1>【グランドメゾン福岡 The Central Luxe　車寄せ入口】</h1>
+  <h1>【グランフロント大阪オーナーズタワー　車寄せ入口】</h1>
 
   <div class="notice">
-    ✅ <strong>重要：</strong>正面玄関前ではなく  
-    「<strong>車寄せ入口（リハビリ専門学校側）</strong>」へお越しください
+    ✅ <strong>ポイント</strong><br>
+    ・ グランフロント大阪オーナーズタワー「北館」側です<br>
+    ・ ホテル（インターコンチネンタル）ではありません<br>
+    ・ 一般駐車場ではなく、オーナーズタワー専用の車寄せです<br>
+    ・ 建物のエントランス前までそのまま乗り入れ可能です
   </div>
 
-  <div class="desc">
-    車寄せの入口は建物の北西側、リハビリ専門学校側にあります。<br>
-    建物周辺に着いたら、正面で停めずにリハビリ専門学校側の車路（車寄せ入口）へ回り込み、  
-    屋根のある車寄せスペースに進入してください。
+  <div class="warning">
+    📌 <strong>よくある間違い（重要）</strong><br>
+    ・ グランフロント大阪 南館<br>
+    ・ インターコンチネンタルホテル<br>
+    ・ 地下駐車場入口<br>
+    ・ 商業施設側エントランス
   </div>
 
-  <!-- 写真1 -->
+  <!-- 写真1：車寄せの入り方 -->
   <figure>
-    <img src="fukuoka/images/entrance.jpg" alt="車寄せ入口（北西側）">
-    <figcaption>車寄せ入口（リハビリ専門学校側）</figcaption>
+    <img src="images/entrance.jpg" alt="車寄せ入口の入り方">
+    <figcaption>車寄せ入口</figcaption>
   </figure>
 
-  <!-- 写真2 -->
+  <!-- 写真2：車寄せスペース -->
   <figure>
-    <img src="fukuoka/images/wide.jpg" alt="入口位置の目安">
+    <img src="images/wide.jpg" alt="車寄せスペース">
   </figure>
 
-  <!-- ★2行分の空白 -->
   <div class="space-2lines"></div>
 
-  <!-- 強調テキスト -->
-  <div class="focus-text">▼ この辺りに入り口があります ▼</div>
+  <div class="focus-text">▼ この辺りに入口があります ▼</div>
 
-  <!-- Googleマップリンク -->
   <a
     class="map-link"
-    href="https://www.google.com/maps/place/33%C2%B035'00.7%22N+130%C2%B024'07.7%22E/@33.5834536,130.4021623,21z"
+    href="https://www.google.com/maps?q=34.7077298,135.4940518&entry=gps"
     target="_blank"
   >
     Googleマップで場所を確認する
@@ -152,3 +153,4 @@ figcaption{
 
 </body>
 </html>
+
